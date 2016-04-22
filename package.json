@@ -1,6 +1,6 @@
 {
   "name": "augment-with",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "basic utility to augment a constructor",
   "main": "main.js",
   "scripts": {
