@@ -20,4 +20,8 @@ Collection.prototype.each = funcion each(fn) {
   }, this);
 };
 
+new Collection(['a', 'b', 'c']).each(function (i, value) {
+  console.log(i, value);
+});
+
 ```
