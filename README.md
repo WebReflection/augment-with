@@ -9,8 +9,15 @@ var augmentWithArray = require('augment-with-array');
 
 var Collection = augmentWith(
   augmentWithArray,
-  function Query(array) {
+  function Collection(array) {
     this.push.apply(this, array);
   }
 );
+
+Collection.prototype.each = funcion each(fn) {
+  this.forEach(function (value, i, self) {
+    fn.call(this, i, value);
+  }, this);
+};
+
 ```
